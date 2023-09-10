@@ -1,0 +1,11 @@
+button {
+    font-size: 1.5em;
+    border-radius: 0.25em;
+}
+
+.size-small { font-size: 1.2em; }
+.size-medium { font-size: 1.8em; }
+.size-large { font-size: 2.1em; }
+
+.border-squared { border-radius: 0; }
+.border-rounded { border-radius: 1em; }

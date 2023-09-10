@@ -1,9 +1,17 @@
+import Button from './components/Button'
 import './App.css'
 
 function App() {
   return (
     <>
-      <h1>Frontenders_s02e01_components</h1>
+      <Button size='small'>small</Button>
+      <Button>normal</Button>
+      <Button size='medium'>medium</Button>
+      <Button size='large'>large</Button>
+      <br/>
+      <Button>normal</Button>
+      <Button border='squared'>medium</Button>
+      <Button border='rounded'>large</Button>
     </>
   )
 }

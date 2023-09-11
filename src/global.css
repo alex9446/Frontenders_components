@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #1abc9c;
+    --link-color: #2980b9;
+    --info-color: #3498db;
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}

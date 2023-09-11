@@ -3,9 +3,25 @@ button {
     border-radius: 0.25em;
 }
 
-.size-small { font-size: 1.2em; }
-.size-medium { font-size: 1.8em; }
-.size-large { font-size: 2.1em; }
+button.size-small { font-size: 1.2em; }
+button.size-medium { font-size: 1.8em; }
+button.size-large { font-size: 2.1em; }
 
-.border-squared { border-radius: 0; }
-.border-rounded { border-radius: 1em; }
+button.border-squared { border-radius: 0; }
+button.border-rounded { border-radius: 1em; }
+
+button.color-primary { background-color: var(--primary-color); }
+button.color-link { background-color: var(--link-color); }
+button.color-info { background-color: var(--info-color); }
+button.color-success { background-color: var(--success-color); }
+button.color-warning { background-color: var(--warning-color); }
+button.color-danger { background-color: var(--danger-color); }
+
+button[class*=color-outline] { background-color: transparent; }
+button.color-outline-normal { border-color: white; }
+button.color-outline-primary { border-color: var(--primary-color); }
+button.color-outline-link { border-color: var(--link-color); }
+button.color-outline-info { border-color: var(--info-color); }
+button.color-outline-success { border-color: var(--success-color); }
+button.color-outline-warning { border-color: var(--warning-color); }
+button.color-outline-danger { border-color: var(--danger-color); }

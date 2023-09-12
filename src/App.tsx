@@ -1,4 +1,5 @@
 import Button from './components/Button'
+import { mdiAccount, mdiCheck, mdiMapMarker } from '@mdi/js'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Button border='rounded'>rounded</Button>
       <br/>
       <Button state='disabled'>disabled</Button>
+      <Button state='loading' ariaLabel='loading'></Button>
       <br/>
       <Button color='normal'>normal</Button>
       <Button color='primary'>primary</Button>
@@ -30,6 +32,10 @@ function App() {
       <Button colorOutline='success'>success</Button>
       <Button colorOutline='warning'>warning</Button>
       <Button colorOutline='danger'>danger</Button>
+      <br/>
+      <Button leftIcon={mdiAccount} color='primary'>icon left</Button>
+      <Button rightIcon={mdiMapMarker} color='info'>icon right</Button>
+      <Button leftIcon={mdiCheck} border='rounded' color='success' ariaLabel='check'></Button>
     </>
   )
 }

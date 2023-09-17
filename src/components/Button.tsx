@@ -15,14 +15,15 @@ interface ButtonProps {
     colorOutline?: Colors
     leftIcon?: mdiIcon
     rightIcon?: mdiIcon
+    onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
-function Button({children, ariaLabel, size='normal', border='normal', state, color='normal', colorOutline, leftIcon, rightIcon}: ButtonProps) {
+function Button({children, ariaLabel, size='normal', border='normal', state, color='normal', colorOutline, leftIcon, rightIcon, onClick}: ButtonProps) {
     let classOptions = `size-${size} border-${border} color-${color}`
     if (colorOutline) classOptions += ' color-outline-'+colorOutline
     if (state == 'loading') classOptions += ' state-loading'
     return (
-        <button aria-label={ariaLabel} className={classOptions} disabled={state == 'disabled'}>
+        <button aria-label={ariaLabel} className={classOptions} disabled={state == 'disabled'} onClick={onClick}>
             {state == 'loading' && <Icon path={mdiLoading} size='1em' spin={1} />}
             {leftIcon && <Icon path={leftIcon} size='1em' />}
             {children}

@@ -50,6 +50,10 @@ function App() {
           <Button rightIcon={mdiMapMarker} color='info'>icon right</Button>
           <Button leftIcon={mdiCheck} border='rounded' color='success' ariaLabel='check'></Button>
         </section>
+        <section>
+          <h2>event</h2>
+          <Button onClick={() => alert('click!')}>click</Button>
+        </section>
       </section>
     </>
   )

@@ -1,7 +1,13 @@
 button {
     font-size: 1.5em;
+    padding: 0.2em 0.6em;
     border-radius: 0.25em;
+    background-color: #e9e9ed;
+    border: 2px solid transparent;
+    cursor: pointer;
 }
+button:hover { filter: brightness(90%); }
+button:active { filter: brightness(60%); }
 
 button.size-small { font-size: 1.2em; }
 button.size-medium { font-size: 1.8em; }
@@ -9,6 +15,13 @@ button.size-large { font-size: 2.1em; }
 
 button.border-squared { border-radius: 0; }
 button.border-rounded { border-radius: 1em; }
+
+button[disabled],
+button.state-loading {
+    filter: none;
+    cursor: not-allowed;
+}
+button.state-loading { cursor: wait; }
 
 button.color-primary { background-color: var(--primary-color); }
 button.color-link { background-color: var(--link-color); }
@@ -25,3 +38,5 @@ button.color-outline-info { border-color: var(--info-color); }
 button.color-outline-success { border-color: var(--success-color); }
 button.color-outline-warning { border-color: var(--warning-color); }
 button.color-outline-danger { border-color: var(--danger-color); }
+
+button svg { vertical-align: text-bottom; }

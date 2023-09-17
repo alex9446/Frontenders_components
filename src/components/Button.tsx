@@ -20,6 +20,7 @@ interface ButtonProps {
 function Button({children, ariaLabel, size='normal', border='normal', state, color='normal', colorOutline, leftIcon, rightIcon}: ButtonProps) {
     let classOptions = `size-${size} border-${border} color-${color}`
     if (colorOutline) classOptions += ' color-outline-'+colorOutline
+    if (state == 'loading') classOptions += ' state-loading'
     return (
         <button aria-label={ariaLabel} className={classOptions} disabled={state == 'disabled'}>
             {state == 'loading' && <Icon path={mdiLoading} size='1em' spin={1} />}

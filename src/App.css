@@ -1,0 +1,12 @@
+#buttons-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buttons-app section { margin: 1.4em 0; }
+#buttons-app section h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+#buttons-app section button { margin: 0.3em; }

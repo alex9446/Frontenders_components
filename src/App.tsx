@@ -1,9 +1,12 @@
+import { useState } from 'react'
 import Button from './components/Button'
 import Input from './components/Input'
 import { mdiAccount, mdiCheck, mdiMapMarker } from '@mdi/js'
 import './App.css'
 
 function App() {
+  const [reactiveValue, setReactiveValue] = useState('')
+
   return (
     <>
       <header className='page-header' aria-label='page title'>
@@ -100,6 +103,19 @@ function App() {
             <Input label='normal' border='normal' />
             <Input label='squared' border='squared' />
             <Input label='rounded' border='rounded' />
+          </div>
+        </section>
+        <section>
+          <h2>input value</h2>
+          <div className='inputs-group'>
+            <Input label='reactive value' exportText={setReactiveValue} />
+          </div>
+          <h3>{reactiveValue}</h3>
+        </section>
+        <section>
+          <h2>floating label</h2>
+          <div className='inputs-group'>
+            <Input label='floating' floatingLabel />
           </div>
         </section>
       </section>

@@ -23,3 +23,15 @@ input.color-info { border-color: var(--info-color); }
 input.color-success { border-color: var(--success-color); }
 input.color-warning { border-color: var(--warning-color); }
 input.color-danger { border-color: var(--danger-color); }
+
+label.floating-label {
+    cursor: text;
+    color: var(--gray-color);
+    transform: translatex(15%) translateY(170%) scale(1.25);
+    transition: transform 300ms, color 300ms;
+}
+label.floating-label.inputFocus,
+label.floating-label.inputNonEmpty {
+    color: initial;
+    transform: none;
+}

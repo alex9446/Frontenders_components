@@ -5,10 +5,10 @@
     --success-color: #2ecc71;
     --warning-color: #f39c12;
     --danger-color: #e74c3c;
+    --gray-color: #dbdbdb;
 }
 
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
-    background-color: #dbdbdb;
 }

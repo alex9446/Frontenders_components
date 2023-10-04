@@ -1,11 +1,16 @@
 import Button from './components/Button'
+import Input from './components/Input'
 import { mdiAccount, mdiCheck, mdiMapMarker } from '@mdi/js'
 import './App.css'
 
 function App() {
   return (
     <>
-      <section id='buttons-app' aria-label='buttons app'>
+      <header className='page-header' aria-label='page title'>
+        <h1>FRONTENDERS UI KIT</h1>
+      </header>
+      <section className='components-group' aria-label='button components group'>
+        <h1>button component</h1>
         <section>
           <h2>sizes</h2>
           <Button size='small'>small</Button>
@@ -53,6 +58,49 @@ function App() {
         <section>
           <h2>event</h2>
           <Button onClick={() => alert('click!')}>click</Button>
+        </section>
+      </section>
+      <section className='components-group' aria-label='input components group'>
+        <h1>input component</h1>
+        <section>
+          <h2>sizes</h2>
+          <div className='inputs-group'>
+            <Input label='small' size='small' />
+            <Input label='normal' size='normal' />
+            <Input label='medium' size='medium' />
+            <Input label='large' size='large' />
+          </div>
+        </section>
+        <section>
+          <h2>attributes</h2>
+          <div className='inputs-group'>
+            <Input label='*required' state='required' />
+            <Input label='disabled' state='disabled' />
+            <Input label='readonly' state='readonly' />
+            <Input label='password' type='password' />
+            <Input label='searchfield' type='search' />
+            <Input label='helper text' help='some help text' />
+          </div>
+        </section>
+        <section>
+          <h2>color states</h2>
+          <div className='inputs-group'>
+            <Input label='normal' color='normal' />
+            <Input label='primary' color='primary' />
+            <Input label='link' color='link' />
+            <Input label='info' color='info' />
+            <Input label='success' color='success' />
+            <Input label='warning' color='warning' />
+            <Input label='danger' color='danger' />
+          </div>
+        </section>
+        <section>
+          <h2>borders</h2>
+          <div className='inputs-group'>
+            <Input label='normal' border='normal' />
+            <Input label='squared' border='squared' />
+            <Input label='rounded' border='rounded' />
+          </div>
         </section>
       </section>
     </>

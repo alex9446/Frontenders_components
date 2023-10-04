@@ -1,0 +1,25 @@
+.input-w-extra {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 1.5em;
+    border-radius: 0.25em;
+    border: 2px solid transparent;
+}
+
+input.size-small { font-size: 1.2em; }
+input.size-medium { font-size: 1.8em; }
+input.size-large { font-size: 2.1em; }
+
+input.border-squared { border-radius: 0; }
+input.border-rounded { border-radius: 1em; }
+
+input.color-normal { border-color: var(--gray-color) }
+input.color-primary { border-color: var(--primary-color); }
+input.color-link { border-color: var(--link-color); }
+input.color-info { border-color: var(--info-color); }
+input.color-success { border-color: var(--success-color); }
+input.color-warning { border-color: var(--warning-color); }
+input.color-danger { border-color: var(--danger-color); }
